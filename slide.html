@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slide.css">
+    <script src="./js/slide.js"></script>
+    <style>
+    </style>
+    <script>
+        window.onload = function () {
+            var n = N.slide.getInit({
+                content: ['javaScript', 'HTML', 'French', 'Chinese'],  //定制技能内容
+                value: [400, 300, 200, 380],  //定制你的技能值
+                timerOut: 1,  //定制滑杠滑动时间
+                color: 'red', //定制滑杠颜色
+                number: 400,  //定制总技能值。
+            });
+            n.slideAnimate();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <h3></h3>
+        <div class="slide-effect">
+
+        </div>
+    </div>
+</body>
+
+</html>
